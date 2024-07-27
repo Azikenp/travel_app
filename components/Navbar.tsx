@@ -5,7 +5,9 @@ const Navbar = () => {
   return (
     <nav className="border-2 border-red-500 flexBetween max-container padding-container relative z-30 py-5">
       <Link href='/'>
-        <Image src='/hilink-logo.svg' width={34} height={34} alt="logo image"/>
+        <Image src='/hilink-logo.svg' width={74} height={29} alt="logo image"/>
+
+        <ul className="hidden h-full gap-12 lg:flex"></ul>
       </Link>
     </nav>
   );

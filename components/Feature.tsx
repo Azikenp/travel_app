@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const Feature = () => {
   return (
-    <section className="border-2 border-red-500 flex-col flexCenter overflow-hidden bg-feature-bg bg-center bg-no-repeat py-24">
-      <div className="max-container padding-container relative w-full justify-end">
+    <section className="flex-col flexCenter overflow-hidden bg-feature-bg bg-center bg-no-repeat py-24">
+      <div className="max-container padding-container relative w-full flex justify-end">
         {/* left */}
         <div className="flex flex-1 lg:min-h-[900px]">
           <Image
@@ -28,7 +28,7 @@ const Feature = () => {
             />
             <h2 className="bold-40 lg:bold-64">Our Features</h2>
           </div>
-          <ul>
+          <ul className="mt-10 grid gap-10 md:grid-cols-2 lg:mt-20 lg:gap-20">
             {FEATURES.map((feature) => {
               return (
                 <FeatureItem
